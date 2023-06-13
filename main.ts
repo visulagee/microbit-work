@@ -1,6 +1,5 @@
-basic.showIcon(IconNames.Confused)
 I2C_LCD1602.LcdInit(0)
-basic.pause(100)
-basic.forever(function () {
-    I2C_LCD1602.ShowString("Hello", 0, 0)
-})
+basic.showIcon(IconNames.Fabulous)
+I2C_LCD1602.on()
+I2C_LCD1602.BacklightOn()
+I2C_LCD1602.ShowString("Visula", 0, 0)
