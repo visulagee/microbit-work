@@ -1,8 +1,6 @@
-input.onButtonPressed(Button.A, function () {
-    pins.digitalWritePin(DigitalPin.P0, 255)
-    pins.analogWritePin(AnalogPin.P1, 1)
-})
-input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P0, 0)
-    pins.analogWritePin(AnalogPin.P1, 0)
+basic.showIcon(IconNames.Confused)
+I2C_LCD1602.LcdInit(0)
+basic.pause(100)
+basic.forever(function () {
+    I2C_LCD1602.ShowString("Hello", 0, 0)
 })
